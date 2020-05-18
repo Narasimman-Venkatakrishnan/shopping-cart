@@ -6,7 +6,11 @@ Clone this repo and install dev dependecies using command "npm install"
 
 ## Development server
 
-Run `ng serve --proxy-config proxyconfig.json` for a dev server. Navigate to `http://localhost:4200/shop`. The app will automatically reload if you change any of the source files.
+Configure backend service URL in proxyconfig.json(Already configured with default one) 
+
+Run `ng serve --proxy-config proxyconfig.json` for a dev server. 
+
+Navigate to `http://localhost:4200/shop`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
