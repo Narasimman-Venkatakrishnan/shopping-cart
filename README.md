@@ -14,7 +14,7 @@ Run `npm start` or `ng serve --proxy-config proxyconfig.json` for a dev server.
 
 Navigate to `http://localhost:4200/shop`. The app will automatically reload if you change any of the source files.
 
-As service requires basic auth sometimes browser may prompt login window. Please use credentials configured in microservice properties file(in prod enviroment same can be stored securely in keyvalut)
+As service requires basic auth sometimes browser may prompt login window. Please use credentials configured in microservice properties file(in prod enviroment same can be stored securely in keyvalut) default: user/pass
 
 ## Build
 
