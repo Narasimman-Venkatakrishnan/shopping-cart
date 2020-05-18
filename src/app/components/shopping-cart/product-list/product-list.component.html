@@ -1,0 +1,14 @@
+<mat-paginator [length]="vehicleListLength" pageSize="12"
+               (page)="getPaginatorData($event)" [pageSizeOptions]="[12, 24, 48, 96]"
+               showFirstLastButtons="true">
+</mat-paginator>
+<div class="row">
+  <div class="col-md-3" *ngFor="let vehicle of vehicles |
+  slice: lowValue : highValue">
+    <app-product-item [vehicle]="vehicle"></app-product-item>
+  </div>
+</div>
+<mat-paginator [length]="vehicleListLength" pageSize="12"
+               (page)="getPaginatorData($event)" [pageSizeOptions]="[12, 24, 48, 96]"
+               showFirstLastButtons="true">
+</mat-paginator>

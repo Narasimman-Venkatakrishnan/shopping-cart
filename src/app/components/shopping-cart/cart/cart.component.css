@@ -1,0 +1,11 @@
+::ng-deep .align-right .btn{
+ text-align: right !important;
+}
+
+.pull-left{
+ float: left;
+}
+
+.pull-right{
+ float: right;
+}

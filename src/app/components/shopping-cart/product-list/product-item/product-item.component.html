@@ -1,0 +1,32 @@
+<div class="card mb-4 shadow-sm" *ngIf="!hideDetails">
+  <img class="bd-placeholder-img card-img-top p-2"  src="/assets/no-image.jpg" width="50" />
+
+  <div class="card-body">
+    <p class="card-text">
+      <strong>{{ vehicle.price | currency:'EUR' }}</strong>
+    </p>
+    <p class="card-text">{{ vehicle.make }}</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button [disabled]="!vehicle.licensed || checkAddedCart(vehicle._id)" type="button" class="btn btn-sm btn-primary product-btn" (click)="handleAddToCart()"
+                [textContent]="checkAddedCart(vehicle._id) ? 'Added' : 'Add to Cart'"></button>
+        <button type="button" [disabled]="!vehicle.licensed" class="btn btn-sm btn-outline-info product-btn" (click)="viewDetails()">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4 shadow-sm" *ngIf="hideDetails">
+  <div class="wrapper-left">
+    <img src="/assets/no-image.jpg" width="250"  />
+  </div>
+  <div class="wrapper-right bg-dark">
+    <label> Warehouse name : <span> {{warehouseDetails.warehouseName}} </span>  </label>
+    <label> Vehicles : <span> {{ vehicle.make  }} {{ vehicle.model }} </span>  </label>
+    <label> Manufacture Year : <span> {{ vehicle.year_model }} </span> </label>
+    <label> Price : <span> {{ vehicle.price | currency: 'EURO ': 'symbol-narrow' : '1.0' }} </span> </label>
+    <label> Date Added : <span> {{ vehicle.date_added |  date }} </span>  </label>
+    <label> Location : <span>  {{ warehouseDetails.carLocation }} </span> </label>
+    <button type="button" class="btn btn-sm btn-primary product-btn" (click)="close()">Close</button>
+  </div>
+</div>

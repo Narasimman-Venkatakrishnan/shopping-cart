@@ -1,0 +1,8 @@
+app-header {
+    cursor: pointer;
+    outline: none;
+    color: aliceblue;
+}
+a{
+    margin-right: 10px;
+}
