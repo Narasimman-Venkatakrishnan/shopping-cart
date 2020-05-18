@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Clone this repo and install dev dependecies using command `npm install`
 
+Components are crated using Angular CLI and Material UI
+
 ## Development server
 
 Configure backend service URL in proxyconfig.json(Already configured with default one) 
@@ -11,6 +13,8 @@ Configure backend service URL in proxyconfig.json(Already configured with defaul
 Run `npm start` or `ng serve --proxy-config proxyconfig.json` for a dev server. 
 
 Navigate to `http://localhost:4200/shop`. The app will automatically reload if you change any of the source files.
+
+As service requires basic auth sometimes browser may prompt login window. Please use credentials configured in microservice properties file(in prod enviroment same can be stored securely in keyvalut)
 
 ## Build
 
