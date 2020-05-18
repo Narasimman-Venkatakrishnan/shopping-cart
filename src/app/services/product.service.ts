@@ -13,7 +13,7 @@ export class ProductService {
   }
 
   public getVehicles() {
-    const basicAuth = 'wareHouseUserName' + ':' + 'wareHouseUserPass';
+    const basicAuth = 'user' + ':' + 'pass';
     const headers = new HttpHeaders();
     headers.append('Authorization', 'Basic' + btoa(basicAuth));
     return this.http.get<Vehicle[]>(environment.baseURL, {params: null, headers});
