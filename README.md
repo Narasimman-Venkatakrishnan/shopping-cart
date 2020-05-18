@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Clone this repo and install dev dependecies using command `npm install`
 
-Components are crated using Angular CLI and Material UI
+Components are created using Angular CLI and Material UI
 
 ## Development server
 
